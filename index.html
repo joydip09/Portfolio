@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joydip — Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">Joydip<span class="dot">.</span></a>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ════════════════════════════════ HERO ════════════════════════════════ -->
+    <section id="home" class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="container hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Joydip<span class="dot">.</span></h1>
+        <h2 class="hero-title">
+          <span class="typewriter" id="typewriter"></span
+          ><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          I build interactive web applications using<br />
+          <strong>JavaScript</strong> and modern web technologies.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-scroll-hint">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ ABOUT ════════════════════════════════ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="about-intro">
+              I'm a passionate frontend developer focused on crafting clean,
+              user-first digital experiences.
+            </p>
+            <div class="about-cards">
+              <div class="about-card reveal">
+                <div class="about-card-icon">📖</div>
+                <div>
+                  <h4>What I Study</h4>
+                  <p>
+                    Frontend Development — turning design into pixel-perfect,
+                    accessible interfaces.
+                  </p>
+                </div>
+              </div>
+              <div class="about-card reveal">
+                <div class="about-card-icon">🛠️</div>
+                <div>
+                  <h4>What I Build</h4>
+                  <p>
+                    Responsive and dynamic UIs that feel smooth and fast on any
+                    device.
+                  </p>
+                </div>
+              </div>
+              <div class="about-card reveal">
+                <div class="about-card-icon">🚀</div>
+                <div>
+                  <h4>What I'm Learning</h4>
+                  <p>
+                    React.js — component architecture, hooks, and the modern
+                    ecosystem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual reveal">
+            <div class="about-img-wrapper">
+              <div class="about-img-placeholder">
+                <span>JD</span>
+              </div>
+              <div class="about-badge">
+                <span class="badge-dot"></span> Available for work
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Projects</span>
+          <h2 class="section-title">Things I've Built</h2>
+        </div>
+
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="javascript">
+            JavaScript
+          </button>
+          <button class="filter-btn" data-filter="api">API</button>
+          <button class="filter-btn" data-filter="css">CSS</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-tech="javascript api">
+            <div class="project-img">
+              <img
+                src="assets/images/weather-app.png"
+                alt="Weather App screenshot"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <span class="project-year">2025</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Weather App</h3>
+              <p class="project-desc">
+                A real-time weather dashboard that fetches live data from
+                OpenWeather API. Search any city and get temperature, humidity,
+                and forecasts instantly.
+              </p>
+              <div class="project-stack">
+                <span class="tag">JavaScript</span>
+                <span class="tag">OpenWeather API</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://joydip09.github.io/Weather_App/"
+                  class="btn btn-sm btn-primary"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/joydip09/Weather_App"
+                  class="btn btn-sm btn-ghost"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-tech="javascript css">
+            <div class="project-img">
+              <img
+                src="assets/images/quizium.png"
+                alt="Quiz App screenshot"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <span class="project-year">2026</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Quizium</h3>
+              <p class="project-desc">
+                An interactive quiz application with score tracking, timers, and
+                multiple categories. Built with vanilla JS and dynamic DOM
+                manipulation.
+              </p>
+              <div class="project-stack">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://joydip09.github.io/Quizium/"
+                  class="btn btn-sm btn-primary"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/joydip09/Quizium"
+                  class="btn btn-sm btn-ghost"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-tech="javascript css">
+            <div class="project-img">
+              <img
+                src="assets/images/pink-tasks.png"
+                alt="Todo App screenshot"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <span class="project-year">2026</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Pink Tasks</h3>
+              <p class="project-desc">
+                A full-featured task manager with local storage persistence,
+                drag-and-drop reordering, and priority tagging to keep you
+                organized.
+              </p>
+              <div class="project-stack">
+                <span class="tag">JavaScript</span>
+                <span class="tag">LocalStorage</span>
+                <span class="tag">CSS Grid</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://joydip09.github.io/Pink-Tasks/"
+                  class="btn btn-sm btn-primary"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/joydip09/Pink-Tasks"
+                  class="btn btn-sm btn-ghost"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">My Toolkit</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title">
+              <span class="group-icon">{ }</span> Languages
+            </h3>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <span class="skill-name">HTML5</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="92"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">CSS3</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="78"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title">
+              <span class="group-icon">⚙</span> Tools
+            </h3>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <span class="skill-name">Git & GitHub</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">VS Code</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Figma</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="60"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Chrome DevTools</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="75"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title">
+              <span class="group-icon">✦</span> Currently Learning
+            </h3>
+            <div class="learning-tags">
+              <span class="learning-tag">React.js</span>
+              <span class="learning-tag">Node.js</span>
+              <span class="learning-tag">TypeScript</span>
+              <span class="learning-tag">Tailwind CSS</span>
+              <span class="learning-tag">REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-left reveal">
+            <p class="contact-desc">
+              I'm currently open to new opportunities. Whether you have a
+              project in mind, a question, or just want to say hi — my inbox is
+              always open.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:cJoydipdip29@gmail.com" class="contact-link">
+                <span class="contact-link-icon">✉</span>
+                <div>
+                  <span class="contact-link-label">Email</span>
+                  <span class="contact-link-value">cJoydipdip29@gmail.com</span>
+                </div>
+              </a>
+              <a
+                href="https://github.com/Joydipdip09"
+                class="contact-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="contact-link-icon">⌥</span>
+                <div>
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-value">github.com/Joydipdip09</span>
+                </div>
+              </a>
+              <a href="#" class="contact-link" target="_blank" rel="noopener">
+                <span class="contact-link-icon">in</span>
+                <div>
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-value">linkedin.com/in/Joydip</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="What's on your mind?"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message →
+            </button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+    <footer id="footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">© 2026 <strong>Joydip</strong></p>
+        <p class="footer-made">Built with HTML, CSS &amp; JavaScript</p>
+        <a
+          href="#home"
+          class="back-to-top"
+          id="back-to-top"
+          aria-label="Back to top"
+          >↑</a
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
