@@ -193,7 +193,6 @@ function clearStatus() {
 
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
     clearStatus();
 
     const nameField = contactForm.querySelector("#name");
@@ -221,12 +220,12 @@ if (contactForm) {
     }
 
     if (hasError) {
+      e.preventDefault();
       formStatus.textContent = "Please fill in all fields correctly.";
       formStatus.classList.add("error-msg");
       return;
     }
 
-    // Simulate success (replace with real submission logic)
     const btn = contactForm.querySelector('button[type="submit"]');
     btn.textContent = "Sending…";
     btn.disabled = true;
