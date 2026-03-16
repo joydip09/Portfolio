@@ -192,7 +192,8 @@ function clearStatus() {
 }
 
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
     clearStatus();
 
     const nameField = contactForm.querySelector("#name");
@@ -201,7 +202,6 @@ if (contactForm) {
 
     let hasError = false;
 
-    // Clear previous error states
     [nameField, emailField, messageField].forEach((f) =>
       f.classList.remove("error"),
     );
@@ -210,17 +210,18 @@ if (contactForm) {
       nameField.classList.add("error");
       hasError = true;
     }
+
     if (!validateEmail(emailField.value.trim())) {
       emailField.classList.add("error");
       hasError = true;
     }
+
     if (!messageField.value.trim()) {
       messageField.classList.add("error");
       hasError = true;
     }
 
     if (hasError) {
-      e.preventDefault();
       formStatus.textContent = "Please fill in all fields correctly.";
       formStatus.classList.add("error-msg");
       return;
@@ -230,17 +231,28 @@ if (contactForm) {
     btn.textContent = "Sending…";
     btn.disabled = true;
 
-    setTimeout(() => {
+    try {
+      const formData = new FormData(contactForm);
+
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
       contactForm.reset();
+
       formStatus.textContent = "✓ Message sent! I'll get back to you soon.";
       formStatus.classList.add("success");
-      btn.textContent = "Send Message →";
-      btn.disabled = false;
-      setTimeout(clearStatus, 5000);
-    }, 1200);
+    } catch {
+      formStatus.textContent = "Something went wrong. Please try again.";
+      formStatus.classList.add("error-msg");
+    }
+
+    btn.textContent = "Send Message →";
+    btn.disabled = false;
   });
 
-  // Clear error on input
   contactForm.querySelectorAll("input, textarea").forEach((field) => {
     field.addEventListener("input", () => field.classList.remove("error"));
   });
