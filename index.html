@@ -36,8 +36,8 @@
         <p class="hero-greeting">Hello, I'm</p>
         <h1 class="hero-name">Joydip<span class="dot">.</span></h1>
         <h2 class="hero-title">
-          <span class="typewriter" id="typewriter"></span
-          ><span class="cursor">|</span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor">|</span>
         </h2>
         <p class="hero-desc">
           I build interactive web applications using<br />
@@ -132,45 +132,50 @@
             JavaScript
           </button>
           <button class="filter-btn" data-filter="api">API</button>
-          <button class="filter-btn" data-filter="css">CSS</button>
+          <button class="filter-btn" data-filter="interactive">
+            Interactive
+          </button>
         </div>
 
         <div class="projects-grid">
           <!-- Project 1 -->
-          <article class="project-card reveal" data-tech="javascript css">
+          <article
+            class="project-card reveal"
+            data-tech="javascript api interactive"
+          >
             <div class="project-img">
               <img
-                src="assets/images/no.png"
+                src="assets/images/quizium.png"
                 alt="Quiz App screenshot"
                 loading="lazy"
               />
               <div class="project-overlay">
-                <span class="project-year">2025</span>
+                <span class="project-year">2026</span>
               </div>
             </div>
             <div class="project-body">
-              <h3 class="project-title">No</h3>
+              <h3 class="project-title">Quizium</h3>
               <p class="project-desc">
-                A playful interactive page where the "No" button dynamically
-                moves away from the cursor, making it impossible to click. Built
-                with vanilla JavaScript using DOM manipulation and event-driven
-                interactions.
+                An interactive quiz application with score tracking, timers, and
+                multiple categories. Built with vanilla JS and dynamic DOM
+                manipulation.
               </p>
               <div class="project-stack">
                 <span class="tag">JavaScript</span>
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
+                <span class="tag">DOM Manipulation</span>
+                <span class="tag">Open Trivia DB API</span>
+                <span class="tag">Fetch API</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://joydip09.github.io/No/"
+                  href="https://joydip09.github.io/Quizium/"
                   class="btn btn-sm btn-primary"
                   target="_blank"
                   rel="noopener"
                   >Live Demo ↗</a
                 >
                 <a
-                  href="https://github.com/joydip09/No"
+                  href="https://github.com/joydip09/Quizium"
                   class="btn btn-sm btn-ghost"
                   target="_blank"
                   rel="noopener"
@@ -202,7 +207,7 @@
               <div class="project-stack">
                 <span class="tag">JavaScript</span>
                 <span class="tag">OpenWeather API</span>
-                <span class="tag">CSS3</span>
+                <span class="tag">Fetch API</span>
               </div>
               <div class="project-links">
                 <a
@@ -224,94 +229,10 @@
           </article>
 
           <!-- Project 3 -->
-          <article class="project-card reveal" data-tech="javascript css">
-            <div class="project-img">
-              <img
-                src="assets/images/rock-paper-scissor.png"
-                alt="Rock-Paper-Scissor screenshot"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <span class="project-year">2026</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">Rock-Paper-Scissor</h3>
-              <p class="project-desc">
-                A browser-based Rock–Paper–Scissors game where players compete
-                against a computer with randomly generated moves. Built with
-                vanilla JavaScript implementing game logic, event handling, and
-                dynamic DOM updates.
-              </p>
-              <div class="project-stack">
-                <span class="tag">JavaScript</span>
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://joydip09.github.io/rock-paper-scissor/"
-                  class="btn btn-sm btn-primary"
-                  target="_blank"
-                  rel="noopener"
-                  >Live Demo ↗</a
-                >
-                <a
-                  href="https://github.com/joydip09/rock-paper-scissor"
-                  class="btn btn-sm btn-ghost"
-                  target="_blank"
-                  rel="noopener"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="project-card reveal" data-tech="javascript css">
-            <div class="project-img">
-              <img
-                src="assets/images/quizium.png"
-                alt="Quiz App screenshot"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <span class="project-year">2026</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">Quizium</h3>
-              <p class="project-desc">
-                An interactive quiz application with score tracking, timers, and
-                multiple categories. Built with vanilla JS and dynamic DOM
-                manipulation.
-              </p>
-              <div class="project-stack">
-                <span class="tag">JavaScript</span>
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://joydip09.github.io/Quizium/"
-                  class="btn btn-sm btn-primary"
-                  target="_blank"
-                  rel="noopener"
-                  >Live Demo ↗</a
-                >
-                <a
-                  href="https://github.com/joydip09/Quizium"
-                  class="btn btn-sm btn-ghost"
-                  target="_blank"
-                  rel="noopener"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 5 -->
-          <article class="project-card reveal" data-tech="javascript css">
+          <article
+            class="project-card reveal"
+            data-tech="javascript interactive"
+          >
             <div class="project-img">
               <img
                 src="assets/images/pink-tasks.png"
@@ -352,6 +273,100 @@
               </div>
             </div>
           </article>
+
+          <!-- Project 4 -->
+          <article
+            class="project-card reveal"
+            data-tech="javascript interactive"
+          >
+            <div class="project-img">
+              <img
+                src="assets/images/rock-paper-scissor.png"
+                alt="Rock-Paper-Scissor screenshot"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <span class="project-year">2026</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Rock-Paper-Scissor</h3>
+              <p class="project-desc">
+                A browser-based Rock–Paper–Scissors game where players compete
+                against a computer with randomly generated moves. Built with
+                vanilla JavaScript implementing game logic, event handling, and
+                dynamic DOM updates.
+              </p>
+              <div class="project-stack">
+                <span class="tag">JavaScript</span>
+                <span class="tag">DOM Events</span>
+                <span class="tag">Game Logic</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://joydip09.github.io/rock-paper-scissor/"
+                  class="btn btn-sm btn-primary"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/joydip09/rock-paper-scissor"
+                  class="btn btn-sm btn-ghost"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article
+            class="project-card reveal"
+            data-tech="javascript interactive"
+          >
+            <div class="project-img">
+              <img
+                src="assets/images/no.png"
+                alt="Quiz App screenshot"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <span class="project-year">2025</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">No</h3>
+              <p class="project-desc">
+                A playful interactive page where the "No" button dynamically
+                moves away from the cursor, making it impossible to click. Built
+                with vanilla JavaScript using DOM manipulation and event-driven
+                interactions.
+              </p>
+              <div class="project-stack">
+                <span class="tag">JavaScript</span>
+                <span class="tag">DOM Events</span>
+                <span class="tag">UI Interaction</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://joydip09.github.io/No/"
+                  class="btn btn-sm btn-primary"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/joydip09/No"
+                  class="btn btn-sm btn-ghost"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -384,7 +399,13 @@
               <li class="skill-item">
                 <span class="skill-name">JavaScript</span>
                 <div class="skill-bar">
-                  <div class="skill-fill" data-width="78"></div>
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">JSON</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="75"></div>
                 </div>
               </li>
             </ul>
@@ -398,7 +419,7 @@
               <li class="skill-item">
                 <span class="skill-name">Git & GitHub</span>
                 <div class="skill-bar">
-                  <div class="skill-fill" data-width="80"></div>
+                  <div class="skill-fill" data-width="95"></div>
                 </div>
               </li>
               <li class="skill-item">
@@ -408,15 +429,15 @@
                 </div>
               </li>
               <li class="skill-item">
-                <span class="skill-name">Figma</span>
+                <span class="skill-name">npm</span>
                 <div class="skill-bar">
-                  <div class="skill-fill" data-width="60"></div>
+                  <div class="skill-fill" data-width="75"></div>
                 </div>
               </li>
               <li class="skill-item">
                 <span class="skill-name">Chrome DevTools</span>
                 <div class="skill-bar">
-                  <div class="skill-fill" data-width="75"></div>
+                  <div class="skill-fill" data-width="80"></div>
                 </div>
               </li>
             </ul>
@@ -428,8 +449,9 @@
             </h3>
             <div class="learning-tags">
               <span class="learning-tag">React.js</span>
-              <span class="learning-tag">Node.js</span>
               <span class="learning-tag">TypeScript</span>
+              <span class="learning-tag">Node.js</span>
+              <span class="learning-tag">Next.js</span>
               <span class="learning-tag">Tailwind CSS</span>
               <span class="learning-tag">REST APIs</span>
             </div>
@@ -466,7 +488,28 @@
                 target="_blank"
                 rel="noopener"
               >
-                <span class="contact-link-icon">⌥</span>
+                <span class="contact-link-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.56
+    0-.27-.01-1.17-.02-2.13-3.2.7-3.87-1.54-3.87-1.54-.52-1.34-1.28-1.7-1.28-1.7
+    -1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96
+    .1-.75.4-1.25.72-1.53-2.55-.29-5.23-1.28-5.23-5.7
+    0-1.26.45-2.29 1.19-3.1-.12-.3-.52-1.5.11-3.13
+    0 0 .97-.31 3.18 1.18.92-.26 1.9-.39 2.88-.39
+    .98 0 1.96.13 2.88.39 2.2-1.49 3.17-1.18 3.17-1.18
+    .63 1.63.23 2.83.11 3.13.74.81 1.19 1.84 1.19 3.1
+    0 4.43-2.69 5.41-5.25 5.69.41.35.78 1.04.78 2.1
+    0 1.52-.01 2.75-.01 3.12 0 .31.21.67.79.56
+    A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"
+                    />
+                  </svg>
+                </span>
                 <div>
                   <span class="contact-link-label">GitHub</span>
                   <span class="contact-link-value">github.com/Joydip09</span>
