@@ -244,6 +244,8 @@ if (contactForm) {
 
       formStatus.textContent = "✓ Message sent! I'll get back to you soon.";
       formStatus.classList.add("success");
+
+      formStatus.scrollIntoView({ behavior: "smooth", block: "center" });
     } catch {
       formStatus.textContent = "Something went wrong. Please try again.";
       formStatus.classList.add("error-msg");
