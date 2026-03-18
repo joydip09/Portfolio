@@ -10,3 +10,7 @@ A clean, dark-themed personal portfolio built with vanilla HTML, CSS, and JavaSc
 - Google Fonts: Syne + DM Sans
 
 ## Built with ❤️ by Joydip
+
+## Link
+
+https://joydip09.netlify.app/
