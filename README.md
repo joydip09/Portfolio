@@ -9,8 +9,8 @@ A clean, dark-themed personal portfolio built with vanilla HTML, CSS, and JavaSc
 - Vanilla JavaScript (IntersectionObserver, no dependencies)
 - Google Fonts: Syne + DM Sans
 
-## Built with ❤️ by Joydip
-
 ## Link
 
 https://joydip09.netlify.app/
+
+## Built with ❤️ by Joydip
