@@ -11,6 +11,6 @@ A clean, dark-themed personal portfolio built with vanilla HTML, CSS, and JavaSc
 
 ## Link
 
-https://joydip09.netlify.app/
+https://joydip09.github.io/Portfolio/
 
 ## Built with ❤️ by Joydip
